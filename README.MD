@@ -2,9 +2,9 @@
 
 - It is script to rotate tabs on the Chrome browser. 
 
-## Python packages:
+## Python packages
 
-### selenium
+### Selenium
 > pip install selenium
 
 ### Chromedriver

@@ -25,7 +25,7 @@ for url in urls[1:]:
     driver.execute_script("window.open(arguments[0], '_blank');", url)
     time.sleep(1)  # Wait a bit for each page to load
 
-# Function to rotate tabs
+# Function to rotate tabs at a specified interval
 def rotate_tabs(interval):
     while True:
         for index in range(len(driver.window_handles)):

@@ -19,3 +19,7 @@
 - You need to import tk 
 
 > pip install tk
+
+# Application UI
+
+![Text Rotator App](AppUI.png)

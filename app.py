@@ -16,6 +16,9 @@ class TabRotator:
         chromedriver_autoinstaller.install()
         self.driver = webdriver.Chrome()
 
+        # maximize the window
+        self.driver.maximize_window()
+
         if self.urls:
             self.driver.get(self.urls[0])
             time.sleep(1)

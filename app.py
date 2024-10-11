@@ -33,6 +33,7 @@ class TabRotator:
                 if not self.running:
                     break
                 self.driver.switch_to.window(self.driver.window_handles[index])
+                self.driver.refresh() # Refresh the current tab(page)
                 time.sleep(self.interval)
 
     def run(self):

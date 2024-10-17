@@ -4,6 +4,7 @@ from selenium import webdriver
 import threading
 import tkinter as tk
 from tkinter import messagebox, simpledialog
+import os
 
 class TabRotator:
     def __init__(self):
@@ -15,8 +16,6 @@ class TabRotator:
     def start_browser(self):
         chromedriver_autoinstaller.install()
         self.driver = webdriver.Chrome()
-
-        # maximize the window
         self.driver.maximize_window()
 
         if self.urls:
@@ -33,7 +32,7 @@ class TabRotator:
                 if not self.running:
                     break
                 self.driver.switch_to.window(self.driver.window_handles[index])
-                self.driver.refresh() # Refresh the current tab(page)
+                self.driver.refresh()  # Refresh the current tab/page
                 time.sleep(self.interval)
 
     def run(self):
@@ -70,6 +69,8 @@ class App:
         self.url_listbox = tk.Listbox(master, width=50)
         self.url_listbox.pack(pady=10)
 
+        self.load_urls()  # Load URLs on startup
+
         self.master.protocol("WM_DELETE_WINDOW", self.on_close)
 
     def start_rotation(self):
@@ -97,9 +98,21 @@ class App:
             self.url_listbox.delete(selected)
 
     def on_close(self):
+        self.save_urls()  # Save URLs before closing
         self.stop_rotation()  # Stop rotation before closing
         if messagebox.askokcancel("Quit", "Do you really want to quit?"):
             self.master.destroy()
+
+    def save_urls(self):
+        with open("urls.txt", "w") as f:
+            for url in self.url_listbox.get(0, tk.END):
+                f.write(url + "\n")
+
+    def load_urls(self):
+        if os.path.exists("urls.txt"):
+            with open("urls.txt", "r") as f:
+                for line in f:
+                    self.url_listbox.insert(tk.END, line.strip())
 
 # Create the main window
 root = tk.Tk()

@@ -51,4 +51,4 @@ This project is licensed under the MIT License.
 Contributions are welcome! Please open an issue or submit a pull request.
 
 ## App UI
-
+![App UI](https://github.com/shubham-pawar/Chrome-Rotate-Tabs/blob/main/AppUI.png)

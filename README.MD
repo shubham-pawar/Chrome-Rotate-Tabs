@@ -1,54 +1,47 @@
 # Tab Rotator Application
 
-Tab Rotator is a simple yet effective GUI application designed to automatically rotate browser tabs at specified intervals. This project utilizes Python's tkinter library for the graphical interface and Selenium for browser automation.
+**Chrome Tab Rotator** is a Python GUI app that automatically rotates browser tabs at set intervals. Built with tkinter for the interface and Selenium for browser automation — perfect for testing workflows and productivity.
 
-## Features
-- Open multiple URLs in separate tabs.
-- Automatically switch between tabs at a defined interval.
-- Refresh the current tab upon switching.
-- User-friendly interface to add or remove URLs easily.
-- Start and stop tab rotation with the click of a button.
+![App UI](https://github.com/shubham-pawar/Chrome-Rotate-Tabs/blob/main/AppUI.png?raw=true)
 
-## Prerequisites
+## ✨ Features
+- Open multiple URLs in separate Chrome tabs
+- Auto-rotate tabs at customizable intervals
+- Auto-refresh current tab on switch
+- Easy URL management (add/remove)
+- Simple start/stop controls
+- Clean tkinter GUI
 
-Before running the application, ensure you have the following dependencies installed:
-- Python 3.x
-- tkinter (for the GUI)
-- selenium (for browser automation)
-- chromedriver_autoinstaller (for automatically installing the ChromeDriver)
+## 🛠 Prerequisites
+- Python 3.8+
+- Chrome browser
+- tkinter (usually included with Python)
+- selenium
+- chromedriver_autoinstaller
 
-### Installation
-1. Clone the repository:
+## 🚀 Installation
 
-```
-git clone https://github.com/yourusername/tab-rotator.git
-cd tab-rotator
-```
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/shubham-pawar/Chrome-Rotate-Tabs.git
+   cd Chrome-Rotate-Tabs
+   ```
 
-2. Install the required packages:
+2. **Install dependencies:**
+   ```bash
+   pip install selenium chromedriver_autoinstaller
+   ```
 
-```
-pip install tk selenium chromedriver_autoinstaller
-```
+## ▶️ Usage
+1. Run: `python app.py`
+2. Add URLs you want to rotate
+3. Set rotation interval (seconds)
+4. Click **"Start Rotating Tabs"**
+5. Click **"Stop"** to pause
 
-## Usage
-1. Run the application:
+## 📄 License
+This project is licensed under the **Apache License 2.0** (updated to match your other projects).  
+See [LICENSE](https://github.com/shubham-pawar/Chrome-Rotate-Tabs/blob/main/LICENSE) file for details.
 
-```
-python app.py
-```
-
-2. Use the GUI to add URLs you want to rotate.
-
-3. Click "Start Rotating Tabs" to begin the rotation process.
-
-4. Click "Stop" to end the rotation.
-
-## License
-This project is licensed under the MIT License.
-
-## Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
-
-## App UI
-![App UI](https://github.com/shubham-pawar/Chrome-Rotate-Tabs/blob/main/AppUI.png)
+## 👨‍💻 Author
+[Shubham Pawar](https://github.com/shubham-pawar)

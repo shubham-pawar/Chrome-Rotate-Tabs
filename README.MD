@@ -24,7 +24,6 @@
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/shubham-pawar/Chrome-Rotate-Tabs.git
-   cd Chrome-Rotate-Tabs
    ```
 
 2. **Install dependencies:**

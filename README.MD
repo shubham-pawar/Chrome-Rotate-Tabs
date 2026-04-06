@@ -28,7 +28,7 @@
 
 2. **Install dependencies:**
    ```bash
-   pip install selenium chromedriver_autoinstaller
+   pip install -r requirements.txt
    ```
 
 ## ▶️ Usage

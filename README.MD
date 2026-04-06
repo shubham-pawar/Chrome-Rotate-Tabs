@@ -4,7 +4,7 @@
 
 ![App UI](https://github.com/shubham-pawar/Chrome-Rotate-Tabs/blob/main/AppUI.png?raw=true)
 
-## ✨ Features
+## Key Features
 - Open multiple URLs in separate Chrome tabs
 - Auto-rotate tabs at customizable intervals
 - Auto-refresh current tab on switch
@@ -19,7 +19,7 @@
 - selenium
 - chromedriver_autoinstaller
 
-## 🚀 Installation
+## Installation
 
 1. **Clone the repository:**
    ```bash
@@ -31,16 +31,20 @@
    pip install -r requirements.txt
    ```
 
-## ▶️ Usage
+## Usage
 1. Run: `python app.py`
 2. Add URLs you want to rotate
 3. Set rotation interval (seconds)
 4. Click **"Start Rotating Tabs"**
 5. Click **"Stop"** to pause
 
-## 📄 License
+## License
 This project is licensed under the **Apache License 2.0** (updated to match your other projects).  
 See [LICENSE](https://github.com/shubham-pawar/Chrome-Rotate-Tabs/blob/main/LICENSE) file for details.
 
-## 👨‍💻 Author
+## Author
 [Shubham Pawar](https://github.com/shubham-pawar)
+
+## Support
+
+If you like this project, please leave a star ⭐

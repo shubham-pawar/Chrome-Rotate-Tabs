@@ -1,5 +1,9 @@
+import truststore
+
+truststore.inject_into_ssl()
+
 import time
-import chromedriver_autoinstaller
+# import chromedriver_autoinstaller
 from selenium import webdriver
 import threading
 import tkinter as tk
@@ -19,8 +23,13 @@ class TabRotator:
         self.stop_event = threading.Event()
 
     def start_browser(self):
-        chromedriver_autoinstaller.install()
-        self.driver = webdriver.Chrome()
+        # chromedriver_autoinstaller.install()
+        from selenium.webdriver.chrome.service import Service
+        local_driver = os.path.join(BASE_DIR, "chromedriver.exe")
+        if os.path.exists(local_driver):
+            self.driver = webdriver.Chrome(service=Service(local_driver))
+        else:
+            self.driver = webdriver.Chrome()  # Selenium finds the driver itself
         self.driver.maximize_window()
 
         if self.urls:

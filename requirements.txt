@@ -1,2 +1,2 @@
-selenium
-chromedriver-autoinstaller
+selenium>=4.6
+truststore
